@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:extras_name",
+ "creation": "2019-02-11 12:12:10.838887",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "extras_name",
+  "extras_description",
+  "extras_quantity",
+  "extras_price",
+  "extras_status",
+  "extras_notes",
+  "extras_id",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "extras_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Extra",
+   "unique": 1
+  },
+  {
+   "fieldname": "extras_description",
+   "fieldtype": "Small Text",
+   "in_global_search": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "extras_quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "extras_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "fieldname": "extras_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Available\nNot Available"
+  },
+  {
+   "fieldname": "extras_notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "extras_id",
+   "fieldtype": "Data",
+   "label": "Extra ID"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Extras",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-12 14:46:25.070498",
+ "modified_by": "Administrator",
+ "module": "Room Management",
+ "name": "Extras",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": " extras_id,extras_description,extras_status",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "extras_name",
+ "track_changes": 1
+}

@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "naming_series:HK-",
+ "creation": "2019-02-09 20:42:30.367246",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "house_keeping_date",
+  "house_keeping_team",
+  "house_keeping_room",
+  "house_keeping_task",
+  "house_keeping_status",
+  "house_keeping_notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "HK ID",
+   "options": "HK-",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "house_keeping_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "house_keeping_team",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Team",
+   "options": "Teams"
+  },
+  {
+   "fieldname": "house_keeping_room",
+   "fieldtype": "Table",
+   "label": "Room",
+   "options": "Room Assign"
+  },
+  {
+   "fieldname": "house_keeping_task",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Task Details"
+  },
+  {
+   "fieldname": "house_keeping_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Pending\nIn Progress\nCompleted"
+  },
+  {
+   "fieldname": "house_keeping_notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "House Keeping",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-12 14:48:03.386059",
+ "modified_by": "Administrator",
+ "module": "Room Management",
+ "name": "House Keeping",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "naming_series, house_keeping_date, house_keeping_team, house_keeping_team, house_keeping_team",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

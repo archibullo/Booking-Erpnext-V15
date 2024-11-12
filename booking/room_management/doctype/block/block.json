@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:block",
+ "creation": "2019-02-12 23:47:42.544611",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "block",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "block",
+   "fieldtype": "Data",
+   "label": "Block",
+   "unique": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  }
+ ],
+ "links": [],
+ "modified": "2024-11-12 14:46:03.704036",
+ "modified_by": "Administrator",
+ "module": "Room Management",
+ "name": "Block",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "block",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "block",
+ "track_changes": 1
+}

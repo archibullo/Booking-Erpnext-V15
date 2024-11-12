@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:room_type",
+ "creation": "2018-10-29 22:10:40.258725",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "room_type",
+  "room_type_description",
+  "room_type_qty",
+  "room_type_rate",
+  "room_type_status",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "options": "RT-"
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "room_type_description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "room_type_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "room_type_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "room_type_status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nNot Available",
+   "reqd": 1
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Room Type",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-12 14:49:22.900069",
+ "modified_by": "Administrator",
+ "module": "Room Management",
+ "name": "Room Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Hotel Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "room_type_description,room_type_rate,room_type_status",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "room_type",
+ "track_changes": 1
+}

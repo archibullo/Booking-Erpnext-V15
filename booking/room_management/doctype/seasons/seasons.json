@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "autoname": "field:season",
+ "creation": "2019-02-09 20:01:04.194472",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "season",
+  "from_date",
+  "to_date",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "season",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Season",
+   "unique": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Active\nNot Active"
+  }
+ ],
+ "links": [],
+ "modified": "2024-11-12 15:04:53.519388",
+ "modified_by": "Administrator",
+ "module": "Room Management",
+ "name": "Seasons",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "season",
+ "track_changes": 1
+}

@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "autoname": "field:team_name",
+ "creation": "2019-02-09 20:40:43.660240",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "team_name",
+  "team_member",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "team_name",
+   "fieldtype": "Data",
+   "label": "Team",
+   "unique": 1
+  },
+  {
+   "fieldname": "team_member",
+   "fieldtype": "Table",
+   "label": "Member",
+   "options": "Member Assign"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nNot Active"
+  }
+ ],
+ "links": [],
+ "modified": "2024-11-12 15:05:10.202369",
+ "modified_by": "Administrator",
+ "module": "Room Management",
+ "name": "Teams",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

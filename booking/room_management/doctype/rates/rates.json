@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "autoname": "field:rates_name",
+ "creation": "2019-02-09 20:03:06.700680",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rates_name",
+  "rates_season",
+  "rates_roomtype",
+  "rates_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "rates_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Rate Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "rates_season",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Season",
+   "options": "Seasons"
+  },
+  {
+   "fieldname": "rates_roomtype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "options": "Room Type"
+  },
+  {
+   "fieldname": "rates_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  }
+ ],
+ "links": [],
+ "modified": "2024-11-12 14:48:45.368589",
+ "modified_by": "Administrator",
+ "module": "Room Management",
+ "name": "Rates",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "rates_season,rates_rate,rates_roomtype",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "rates_season",
+ "track_changes": 1
+}

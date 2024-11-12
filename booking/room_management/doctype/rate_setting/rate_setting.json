@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2019-02-12 16:43:37.436318",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "rates_season",
+  "rates_roomtype",
+  "rates_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "rates_season",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Season",
+   "options": "Seasons",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rates_roomtype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "options": "Room Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rates_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2024-11-12 14:48:29.516882",
+ "modified_by": "Administrator",
+ "module": "Room Management",
+ "name": "Rate Setting",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "search_fields": "rates_season,rates_rate,rates_roomtype",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "rates_season",
+ "track_changes": 1
+}

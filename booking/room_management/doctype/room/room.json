@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:rooms_room",
+ "creation": "2024-11-12 10:54:05.700924",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "rooms_room",
+  "room_type",
+  "capacity",
+  "rooms_floor",
+  "rooms_status",
+  "rooms_image",
+  "rooms_notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "rooms_room",
+   "fieldtype": "Data",
+   "label": "Room",
+   "unique": 1
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Link",
+   "label": "Room Type",
+   "options": "Room Type"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Data",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "rooms_floor",
+   "fieldtype": "Link",
+   "label": "Floor",
+   "options": "Floor"
+  },
+  {
+   "fieldname": "rooms_status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nNot Active"
+  },
+  {
+   "fieldname": "rooms_image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "rooms_notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Room",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-12 14:40:31.580792",
+ "modified_by": "Administrator",
+ "module": "Room Management",
+ "name": "Room",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "rooms_room,rooms_status,rooms_floor",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "rooms_room",
+ "track_changes": 1,
+ "track_seen": 1
+}
